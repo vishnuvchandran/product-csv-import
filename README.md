@@ -114,7 +114,7 @@ The API will be available at `http://localhost:8000`
 1. Update the API base URL in `/frontend/src/services/api.js`:
 ```javascript
 // When using Sail (Docker)
-const API_BASE_URL = 'http://localhost:80/api';
+const API_BASE_URL = 'http://localhost';
 
 // When using php artisan serve
-const API_BASE_URL = 'http://localhost:8000/api';
+const API_BASE_URL = 'http://localhost:8000';
