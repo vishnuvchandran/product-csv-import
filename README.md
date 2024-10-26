@@ -109,12 +109,4 @@ php artisan serve
 
 The API will be available at `http://localhost:8000`
 
-**Note**: While `php artisan serve` works for Laravel projects created with Sail, it's recommended to use Sail to ensure consistency with the Docker environment and avoid potential configuration mismatches. If you choose to use `php artisan serve`, you'll need to update the API base URL in your frontend configuration:
-
-1. Update the API base URL in `/frontend/src/services/api.js`:
-```javascript
-// When using Sail (Docker)
-const API_BASE_URL = 'http://localhost';
-
-// When using php artisan serve
-const API_BASE_URL = 'http://localhost:8000';
+**Note**: While `php artisan serve` works for Laravel projects created with Sail, it's recommended to use Sail to ensure consistency with the Docker environment and avoid potential configuration mismatches. If you choose to use `php artisan serve`, you'll need to update the API base URL in `/frontend/src/services/api.js`.
